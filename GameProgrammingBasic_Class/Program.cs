@@ -1,5 +1,14 @@
 ﻿using System;
 
+// enum
+enum E_Type
+{
+	A = 2,
+	B,      // == 3
+	C = -1,
+	D,      // == -1
+}
+
 class Program
 {
 	static void Main(string[] args)
