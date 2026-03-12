@@ -25,6 +25,13 @@ class Program
 		string tempStr2 = "1ab23";
 		int tempInt2 = int.Parse(tempStr2);     // error
 
+		int? nInt = null;       // nullable 형식 (null 들어가는 변수)
+		int resultVal = 0;
+		resultVal = (nInt != null) ? nInt.Value : 0;    // 줄여
+		resultVal = nInt ?? 0;                          // 더 줄여
+
+		var v = 10;             // == auto
+
 		// 출력 (줄바꿈)
 		System.Console.Write("라인1");
 		Console.WriteLine("라인2");       // \n
